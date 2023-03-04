@@ -1,7 +1,9 @@
-def PlusMinus(text):
-    filter_plus = text.replace('plus','+')
-    filter_minus = filter_plus.replace('minus','-')
-    return filter_minus
+def Solution(s):
+    s = s.replace('plus','+')
+    s = s.replace('minus','-')
+    return s
 
-x = PlusMinus('minusplusplusminusminusplusplusminusminusplusplusminusminusplusplusminusminusplusplusminusminusplusminusminusplusplusminusminusplusplus')
-print(x)
+_str = 'minusplusplusminusminusplusplusminusminusplusplusminusminusplusplusminusminusplusplusminusminusplusminusminusplusplusminusminusplusplus'
+_str2 = 'minusplusminusplusminusplusminusplusminusplusminusplusminusplusminusplusminusplusminusplusminusplusminusplusminusplusminusplusminusplus'
+print(Solution(_str))
+print(Solution(_str2))
